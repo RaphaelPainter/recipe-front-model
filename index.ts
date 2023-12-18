@@ -14,6 +14,7 @@ export interface Recipe {
   cooks_fk: Cook;
   description: string;
   ingredients: Ingredient[];
+  image: string;
 }
 
 export interface Cook {
