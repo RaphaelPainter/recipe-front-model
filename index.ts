@@ -7,3 +7,16 @@ export interface Ingredient {
   season_start: string;
   season_end: string;
 }
+
+export interface Recipe {
+  id: string;
+  name: string;
+  cooks_fk: Cook;
+  description: string;
+  ingredients: Ingredient[];
+}
+
+export interface Cook {
+  id: string;
+  name: string;
+}
